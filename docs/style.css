@@ -1,0 +1,471 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anton);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:800);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 5px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 5px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 5px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 5px;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+  font-size: 16px;  
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/198/270/331/keyboard-technics-computer-key-wallpaper-thumb.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.box-line {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    background-image: linear-gradient(to left, #fff, #d9d9d9, #fff);
+    background-size: 100% 2px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+h1 {
+    text-align: center;
+    padding: 70px 0 10px 0;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h3{
+    text-align: center;
+    padding: 10px 0 10px 0;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.home-screen {
+  width: 100%;
+  height: 100vh;
+  
+  /* Others */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* MENU */
+
+.logo {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #FFF;
+  color: #000;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 4px;
+  transition: .3s ease;
+}
+
+.navegation-static .menu {
+  text-align: center;
+  padding-top: 20px;
+  transition: .3s ease;
+}
+
+.navegation-static .menu li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.navegation-static .menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 8px;
+  transition: .3s ease;
+}
+
+.navegation-static .menu li a:hover {
+  color: #4B92DB;
+}
+
+/* SCROLLING MENU */
+.logo-scroll {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #000;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 4px;
+  transition: .3s ease;
+}
+
+.navegation-static-scroll .menu {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #FFF;
+  opacity: 0.8;
+  transition: .3s ease;
+}
+
+.navegation-static-scroll .menu li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.navegation-static-scroll .menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 8px;
+  transition: .3s ease;
+}
+
+.navegation-static-scroll .menu li a:hover {
+  color: #4B92DB;
+}
+
+/* END SCROLLING MENU */
+
+/* END MENU */
+
+/* HOME CONTENT */
+.home-screen .content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-screen .content p:first-child {
+  margin-bottom: 0;
+  font-family: 'Merriweather Sans', sans-serif; 
+  font-size: 450%;
+  text-shadow: 3px 3px 1px rgba(255, 255, 255, .7);
+  line-height: 70px;
+}
+
+.home-screen .content p:last-child {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 70%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, .7);
+  letter-spacing: 5px;
+  padding-left: 5px;
+}
+.home-screen .fa {
+  font-size: 200%;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  animation: upper 1s ease-in-out 1s infinite;
+}
+
+.home-screen .fa a {
+  text-decoration: none;
+  transition: .2s;
+  color: #000;
+}
+
+.home-screen .fa a:hover {
+  color: rgba(255,255,255,.5);
+}
+@keyframes upper {
+  0% {
+    transform: translate(-50%, -95%);
+  }
+  100% {
+    transform: translate(-50%, -40%);
+  }
+}
+/* END HOME CONTENT */
+
+/* ABOUT CONTENT */
+.about {
+    height: 700px;
+    background-color: #fff; 
+}
+
+.about-content {
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+}
+
+.about .about-text {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+    width: 50%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.about .about-text::before {
+  content: "Olá,";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-size: 200%;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+.list-serviços{
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.list-serviços .item-serviços{
+  text-align: center;
+}
+
+.item-serviços a{
+  width: 220px;
+  background-color: #fff;
+  border-radius: 30px;
+  height: 50px;
+  text-align:center;
+  margin-top: 20px;
+  line-height: 50px;
+  padding: 5px 10px;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.item-serviços p{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    width: 50%;
+    font-family: 'Noto Sans', sans-serif;
+}
+.item-serviços img{
+  border-radius: 50%;
+  width: 150px;
+  margin: auto;
+}
+
+.portfolio {
+    
+    clear: both;
+}
+
+/* END ABOUT CONTENT */
+
+/* PORTFOLIO SECTION */
+.portfolio {
+    background-color: #f5f5f5;
+    
+}
+
+.portfolio .box-portfolio {
+    text-align: center;
+    margin: 5% auto 0 auto;
+    width: 75%;
+    height: 600px;
+   
+}
+
+.portfolio .box-portfolio .box {
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    height: 40%;
+    border-radius: 5px;
+    transition: .3s ease;
+
+    
+}
+
+.portfolio .box-portfolio .box:hover {
+    -webkit-filter: none;	
+     filter: none;	
+     
+}
+
+.portfolio img {
+  border-radius: 50%;
+  width: 150px;
+}
+.abaixo{
+  margin-top: 10px;
+  justify-content: space-around;
+  display: flex;
+
+}
+.portfolio p{
+  position: relative;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* END SECTION */
+
+/* CONTACT */
+.contact {
+    background-color: #fff;
+    width: 100%;
+    height: 500px;
+}
+
+.content-contact {
+    width: 75%;
+    margin: auto;
+}
+
+.content-contact .form {
+    padding-top: 5%;
+}
+
+.content-contact .form form {
+    float: left;
+    margin-left: 10%;
+}
+
+.content-contact .form .form-attr {
+    width: 150%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #bfbfbf; 
+}
+
+.content-contact .form .form-attr:last-child {
+    border-bottom: 0; 
+}
+
+.content-contact .form form input {
+    width: 100%;
+    border: 0;
+}
+
+.content-contact .form form textarea {
+    resize: none;
+    border: 0;
+    width: 100%;
+}
+
+.content-contact .form .form-attr button {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #e6e6e6;
+    color: #737373;
+    width: 100px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.content-contact .form .form-attr button:hover {
+    background-color: #737373;
+    color: #e6e6e6;
+    cursor: pointer;
+}
+
+.content-contact .get-in-touch {
+    padding-top: 40px;
+    position: relative;
+    float: right;
+    margin-right: 10%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.content-contact .get-in-touch::before {
+  content: "e-mail";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 200%;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+/* END CONTACT */
+
+/* SOCIAL MEDIA */
+.social-media {
+    padding-top: 3%;
+    width: 100%;
+    height: 150px;
+    background-color: #f5f5f5;
+}
+
+.social-media .content-social {
+    width: 75%;
+    margin: auto;
+}
+
+.social-media .content-social .about-page h3 {
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.social-media .content-social .about-page {
+    float: left;
+    margin-left: 20%;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.social-media .content-social .about-page h3 {
+    padding-bottom: 20px;
+}
+
+.social-media .content-social .social-media-button {
+    float: right;
+    margin-right: 10%;
+}
+
+.social-media .content-social ul li {
+    display: inline-block;
+}
+
+.social-media .content-social ul li a {
+   font-size: 25px;
+   margin-left: 10px;
+   color: #000; 
+}
+
+.social-media .content-social ul li a:hover {
+   color: #737373; 
+}
+/* END SOCIAL MEDIA */
+
+/* FOOTER*/
+.footer {
+  padding-top: 50px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/* END FOOTER */
